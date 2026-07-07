@@ -5,28 +5,76 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background-color: #f4efe6;
+  background: #f2eadc;
   color: #2b2118;
-  line-height: 1.6;
+  line-height: 1.7;
+  text-align: center;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 0.2em;
+header {
+  padding: 50px 20px;
+  background: #3b2a1a;
+  color: #f8f1e5;
+}
+
+.logo h1 {
+  font-size: 3.2rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.logo p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 25px;
 }
 
 h2 {
-  font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 
 p {
-  max-width: 700px;
-  margin: 20px auto;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
-body {
-  text-align: center;
-  padding: 60px 20px;
+.hero {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #d8c3a5;
+}
+
+.gallery {
+  background: #e7d6bd;
+}
+
+.photos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photos div {
+  width: 250px;
+  height: 180px;
+  border: 2px solid #8b6b45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f1e5;
+  font-style: italic;
+}
+
+footer {
+  background: #3b2a1a;
+  color: #f8f1e5;
+  padding: 20px;
 }
