@@ -44,11 +44,19 @@ p {
 }
 
 .hero {
-  min-height: 350px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #d8c3a5;
+  padding: 40px;
+
+  background-image: url("images/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-shadow: 1px 1px 4px #000;
 }
 
 .gallery {
