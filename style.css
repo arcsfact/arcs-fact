@@ -95,3 +95,10 @@ footer {
 .logo h1 {
   margin-top: 10px;
 }
+.logo img {
+  display: block !important;
+  width: 300px !important;
+  height: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
