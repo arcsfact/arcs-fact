@@ -5,7 +5,10 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background: #f2eadc;
+  background-image: url("images/arc 1.jpg");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
   color: #2b2118;
   line-height: 1.7;
   text-align: center;
