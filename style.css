@@ -44,16 +44,17 @@ body {
 
 /* LOGO */
 
-.logo {
-    position: absolute;
-    top: 30px;
-    left: 40px;
+.logo{
+    position:absolute;
+    top:35px;
+    left:50px;
 }
 
 .logo img {
-    width: 180px;
-    opacity: 0.9;
-    mix-blend-mode: screen;
+    width: 230px;
+    opacity: 0.95;
+    filter:
+        drop-shadow(0 3px 12px rgba(0,0,0,.45));
 }
 
 
