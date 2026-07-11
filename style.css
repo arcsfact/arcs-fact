@@ -20,7 +20,7 @@ body {
     height: 100vh;
     background-image: 
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)),
-    url("images/arc 1.jpg");
+   url("images/arc-principal.jpg");
 
     background-size: cover;
     background-position: center;
