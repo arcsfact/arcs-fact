@@ -1,4 +1,6 @@
-/* Arcs&Fact' - Style principal */
+/* =========================
+   Arcs&Fact' - Style principal
+   ========================= */
 
 * {
     margin: 0;
@@ -6,123 +8,209 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Georgia", serif;
+    font-family: Georgia, serif;
     color: #2b2118;
-    background: #f5f1eb;
-    line-height: 1.6;
-} 
-    margin: 0;
-    overflow-x: hidden;
+    background: #ffffff;
 }
 
 
-/* IMAGE D'ACCUEIL */
+/* =========================
+   GRANDE IMAGE D'ACCUEIL
+   ========================= */
 
 .hero {
-    min-height: 100vh;
 
-    background-image:
-        linear-gradient(
-            rgba(0,0,0,0.18),
-            rgba(0,0,0,0.25)
-        ),
-        url("./images/arc-principal.jpg");
+    height: 100vh;
+    min-height: 700px;
+
+    background-image: url("images/arc-principal.jpg");
 
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 
     position: relative;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    text-align: center;
-    color: white;
+    overflow: hidden;
 }
 
-/* LOGO */
 
-.logo{
-    position:absolute;
-    top:35px;
-    left:50px;
+/* voile léger pour la lisibilité */
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.18);
+
 }
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo {
+
+    position: absolute;
+
+    top: 35px;
+    left: 45px;
+
+    z-index: 2;
+
+}
+
 
 .logo img {
+
     width: 230px;
+
+    height: auto;
+
     opacity: 0.85;
+
     mix-blend-mode: multiply;
-    filter: drop-shadow(0 3px 12px rgba(0,0,0,.35));
+
 }
 
 
-/* TEXTE D'ACCUEIL */
+
+/* =========================
+   TEXTE SUR IMAGE
+   ========================= */
+
+.hero-text {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: white;
+
+    text-shadow:
+        0 3px 12px rgba(0,0,0,0.8);
+
+}
+
 
 .hero-text h1 {
-    font-size: 4rem;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+
+    font-size: 4.5rem;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+
 }
+
 
 .hero-text h2 {
-    font-size: 1.8rem;
+
+    font-size: 2rem;
+
     font-weight: normal;
+
     margin-bottom: 30px;
+
 }
+
 
 .hero-text p {
+
     font-size: 1.4rem;
+
     font-style: italic;
-    margin-bottom: 40px;
+
+    line-height: 1.6;
+
 }
 
 
-/* BOUTON */
+
+/* =========================
+   BOUTON
+   ========================= */
 
 .btn {
+
     display: inline-block;
+
+    margin-top: 35px;
+
     padding: 12px 30px;
+
     border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
 }
+
 
 .btn:hover {
-    background: white;
-    color: #2b2118;
+
+    background:white;
+
+    color:#2b2118;
+
 }
 
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+   ========================= */
 
 section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 90px 40px;
-    text-align: center;
+
+    padding: 80px 10%;
+
+    text-align:center;
+
 }
+
 
 section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: normal;
+
+    font-size:2.5rem;
+
+    font-weight:normal;
+
+    margin-bottom:30px;
+
 }
 
-section p {
-    font-size: 1.15rem;
-    margin-bottom: 20px;
-}
 
 
-/* PIED DE PAGE */
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
-    background: #2b2118;
-    color: white;
-    text-align: center;
-    padding: 25px;
+
+    background:#2b2118;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
 }
