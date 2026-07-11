@@ -1,209 +1,65 @@
-/* =========================
-   Arcs&Fact' - Style principal
-   ========================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Georgia, serif;
-    color: #2b2118;
-    background: #ffffff;
 }
-
-
-/* =========================
-   GRANDE IMAGE D'ACCUEIL
-   ========================= */
 
 .hero {
     height: 100vh;
-    min-height: 700px;
-
-    background-image: url("images/arc-principal.jpg");
-
+    width: 100%;
+    background-image: url("images/Arcs&Fact' dans la forêt dorée.png");
     background-size: cover;
     background-position: center;
-
-    position: relative;
-
-    color: white;
 }
 
-/* voile léger pour la lisibilité */
-.hero::before {
-
-    content: "";
-
+header {
     position: absolute;
-    inset: 0;
-
-    background: rgba(0,0,0,0.18);
-
+    top: 0;
+    right: 0;
+    padding: 40px 70px;
+    z-index: 2;
 }
 
+nav a {
+    color: #f1d58a;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
 
-/* =========================
-   LOGO
-   ========================= */
-
-.logo {
-
+.contenu {
     position: absolute;
-
-    top: 35px;
-    left: 45px;
-
-    z-index: 2;
-
+    top: 35%;
+    left: 6%;
+    color: #f5dda0;
 }
 
-
-.logo img {
-
-    width: 230px;
-
-    height: auto;
-
-    opacity: 0.85;
-
-    mix-blend-mode: multiply;
-
-}
-
-
-
-/* =========================
-   TEXTE SUR IMAGE
-   ========================= */
-
-.hero-text {
-
-    position: relative;
-
-    z-index: 2;
-
-    text-align: center;
-
-    color: white;
-
-    text-shadow:
-        0 3px 12px rgba(0,0,0,0.8);
-
-}
-
-
-.hero-text h1 {
-
-    font-size: 4.5rem;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 15px;
-
-}
-
-
-.hero-text h2 {
-
-    font-size: 2rem;
-
+.contenu h1 {
+    font-size: 80px;
     font-weight: normal;
-
-    margin-bottom: 30px;
-
 }
 
-
-.hero-text p {
-
-    font-size: 1.4rem;
-
+.contenu h2 {
+    font-size: 42px;
     font-style: italic;
-
-    line-height: 1.6;
-
+    font-weight: normal;
 }
 
-
-
-/* =========================
-   BOUTON
-   ========================= */
-
-.btn {
-
-    display: inline-block;
-
+.contenu p {
     margin-top: 35px;
-
-    padding: 12px 30px;
-
-    border: 1px solid white;
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:0.3s;
-
+    font-size: 26px;
 }
 
-
-.btn:hover {
-
-    background:white;
-
-    color:#2b2118;
-
-}
-
-
-
-/* =========================
-   SECTIONS
-   ========================= */
-
-section {
-
-    padding: 80px 10%;
-
-    text-align:center;
-
-}
-
-
-section h2 {
-
-    font-size:2.5rem;
-
-    font-weight:normal;
-
-    margin-bottom:30px;
-
-}
-
-
-
-/* =========================
-   FOOTER
-   ========================= */
-
-footer {
-
-    background:#2b2118;
-
-    color:white;
-
-    text-align:center;
-
-    padding:25px;
-
+button {
+    margin-top: 40px;
+    padding: 18px 35px;
+    background: transparent;
+    color: #f5dda0;
+    border: 1px solid #f5dda0;
+    font-size: 18px;
 }
