@@ -24,8 +24,8 @@ body {
 
     background-image:
         linear-gradient(
-            rgba(92, 55, 20, 0.22),
-            rgba(35, 18, 8, 0.38)
+            rgba(0,0,0,0.18),
+            rgba(0,0,0,0.25)
         ),
         url("./images/arc-principal.jpg");
 
@@ -33,11 +33,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    position: relative;
     text-align: center;
     color: white;
 }
