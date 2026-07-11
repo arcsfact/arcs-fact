@@ -21,23 +21,23 @@ body {
 
 .hero {
     min-height: 100vh;
-    width: 100%;
-    
-    background-image:linear-gradient(
-    rgba(55,35,15,0.25),
-    rgba(20,10,5,0.45)
-), url("./images/arc-principal.jpg");
+
+    background-image:
+        linear-gradient(
+            rgba(92, 55, 20, 0.22),
+            rgba(35, 18, 8, 0.38)
+        ),
+        url("./images/arc-principal.jpg");
 
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
 
-    position: relative;
-
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
+    position: relative;
     text-align: center;
     color: white;
 }
